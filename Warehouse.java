@@ -9,9 +9,9 @@ public class Warehouse
         int n= sc.nextInt();
         int total=0;
 
-        for (int i = 0; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             
-        
+         System.out.println("\nProduct " + i);
         System.out.print("Enter Minimum Required Stock");
         int Minimum= sc.nextInt();
 
@@ -23,8 +23,10 @@ public class Warehouse
             System.out.println("Restock needed:"+i);
             total++;
         }
-        
-        
+        else
+        {
+            System.out.println("No restock needed");
+        }
     }
     System.out.println("Total no of products:"+total);
 
