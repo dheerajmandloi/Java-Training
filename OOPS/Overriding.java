@@ -9,6 +9,7 @@ class A{
 class B extends A{
     void add(int a,int b)
     {
+      super.add(a, b);
       System.out.println("Total from B :"+(a*b));
     }
 }
